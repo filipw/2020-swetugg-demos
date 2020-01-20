@@ -2,8 +2,6 @@
 
 namespace Swetugg.Demos
 {
-    class Boo { }
-
     class Program
     {
         private const string hello = "hello";
@@ -25,14 +23,6 @@ namespace Swetugg.Demos
         private static void Print(string message)
         {
             Console.WriteLine($"Message: {message}!");
-
-            try
-            {
-
-            } catch (Exception e)
-            {
-                throw e;
-            }
         }
 
         private static void StupidAllocation()

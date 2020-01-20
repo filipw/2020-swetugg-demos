@@ -14,8 +14,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swetugg.Demos.Ruleset", "sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swetugg.VariableLengthAnalyzer", "src\Swetugg.VariableLengthAnalyzer\Swetugg.VariableLengthAnalyzer.csproj", "{C5D71AD5-9A58-4A36-AAAF-8B995509916E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swetugg.VariableLengthAnalyzer.Test", "src\Swetugg.VariableLengthAnalyzer.Test\Swetugg.VariableLengthAnalyzer.Test.csproj", "{1B34AA8C-4055-4246-9D32-F50923F440DC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swetugg.VariableLengthAnalyzer.Vsix", "src\Swetugg.VariableLengthAnalyzer.Vsix\Swetugg.VariableLengthAnalyzer.Vsix.csproj", "{46902954-F328-4405-AB85-F457E72473AB}"
 EndProject
 Global
@@ -36,10 +34,6 @@ Global
 		{C5D71AD5-9A58-4A36-AAAF-8B995509916E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5D71AD5-9A58-4A36-AAAF-8B995509916E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5D71AD5-9A58-4A36-AAAF-8B995509916E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B34AA8C-4055-4246-9D32-F50923F440DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B34AA8C-4055-4246-9D32-F50923F440DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B34AA8C-4055-4246-9D32-F50923F440DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B34AA8C-4055-4246-9D32-F50923F440DC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{46902954-F328-4405-AB85-F457E72473AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{46902954-F328-4405-AB85-F457E72473AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46902954-F328-4405-AB85-F457E72473AB}.Release|Any CPU.ActiveCfg = Release|Any CPU

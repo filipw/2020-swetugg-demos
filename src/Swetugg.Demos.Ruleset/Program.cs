@@ -2,7 +2,7 @@
 
 namespace Swetugg.Demos.Ruleset
 {
-    //demo program
+    #region program
     class Program
     {
         static void Main(string[] args)
@@ -10,4 +10,5 @@ namespace Swetugg.Demos.Ruleset
             Console.WriteLine("Hello World!");
         }
     }
+    #endregion
 }
