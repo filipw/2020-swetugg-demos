@@ -9,7 +9,8 @@ namespace Swetugg.Sample
             var name = "foo";
             var allowedName = "foo";
             var veryLongAndUnusuallyComplicatedName = "foo";
-            Console.WriteLine("Hello World!");
+
+            Console.WriteLine($"{name}{allowedName}{veryLongAndUnusuallyComplicatedName}");
         }
     }
 }

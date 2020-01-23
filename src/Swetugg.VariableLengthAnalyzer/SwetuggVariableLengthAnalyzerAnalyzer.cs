@@ -13,7 +13,7 @@ namespace Swetugg.VariableLengthAnalyzer
     [DiagnosticAnalyzer(LanguageNames.CSharp)]
     public class SwetuggVariableLengthAnalyzerAnalyzer : DiagnosticAnalyzer
     {
-        public const string DiagnosticId = "SwetuggVariableLengthAnalyzer";
+        public const string DiagnosticId = "SWG001";
 
         private static readonly LocalizableString Title = new LocalizableResourceString(nameof(Resources.AnalyzerTitle), Resources.ResourceManager, typeof(Resources));
         private static readonly LocalizableString MessageFormat = new LocalizableResourceString(nameof(Resources.AnalyzerMessageFormat), Resources.ResourceManager, typeof(Resources));

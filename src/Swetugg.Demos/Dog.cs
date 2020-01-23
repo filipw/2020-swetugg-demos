@@ -4,20 +4,7 @@ using System.Text;
 
 namespace Swetugg.Demos
 {
-    class Dog
-    {
-        private string _name;
+    internal class Dog {}
 
-        public Dog(string name)
-        {
-            _name = name ?? throw new ArgumentNullException(nameof(name));
-        }
-
-        public async void Bark()
-        {
-            Console.WriteLine($"Woof woof! {_name} barks!");
-        }
-    }
-
-    class Cat { }
+    internal class Cat {}
 }

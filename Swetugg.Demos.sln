@@ -10,11 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		NuGet.config = NuGet.config
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swetugg.Demos.Ruleset", "src\Swetugg.Demos.Ruleset\Swetugg.Demos.Ruleset.csproj", "{C4D0591F-1DD1-4C75-8EBB-59A42C008B9B}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swetugg.VariableLengthAnalyzer", "src\Swetugg.VariableLengthAnalyzer\Swetugg.VariableLengthAnalyzer.csproj", "{C5D71AD5-9A58-4A36-AAAF-8B995509916E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swetugg.VariableLengthAnalyzer.Vsix", "src\Swetugg.VariableLengthAnalyzer.Vsix\Swetugg.VariableLengthAnalyzer.Vsix.csproj", "{46902954-F328-4405-AB85-F457E72473AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swetugg.Demos.EditorConfig", "src\Swetugg.Demos.EditorConfig\Swetugg.Demos.EditorConfig.csproj", "{566443A8-7008-4EFE-85B8-9463B7B1CD7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,10 +26,6 @@ Global
 		{654C1948-90BB-4E45-869C-4A56CE1A1458}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{654C1948-90BB-4E45-869C-4A56CE1A1458}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{654C1948-90BB-4E45-869C-4A56CE1A1458}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4D0591F-1DD1-4C75-8EBB-59A42C008B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4D0591F-1DD1-4C75-8EBB-59A42C008B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4D0591F-1DD1-4C75-8EBB-59A42C008B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4D0591F-1DD1-4C75-8EBB-59A42C008B9B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C5D71AD5-9A58-4A36-AAAF-8B995509916E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C5D71AD5-9A58-4A36-AAAF-8B995509916E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5D71AD5-9A58-4A36-AAAF-8B995509916E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -38,6 +34,10 @@ Global
 		{46902954-F328-4405-AB85-F457E72473AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46902954-F328-4405-AB85-F457E72473AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46902954-F328-4405-AB85-F457E72473AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{566443A8-7008-4EFE-85B8-9463B7B1CD7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{566443A8-7008-4EFE-85B8-9463B7B1CD7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{566443A8-7008-4EFE-85B8-9463B7B1CD7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{566443A8-7008-4EFE-85B8-9463B7B1CD7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
