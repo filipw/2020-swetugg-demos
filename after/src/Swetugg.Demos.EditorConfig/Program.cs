@@ -12,7 +12,6 @@ namespace Swetugg.Demos
             }
 
             var number = (int)(object)args[0];
-
             Console.WriteLine(number * number);
             Console.ReadLine();
         }

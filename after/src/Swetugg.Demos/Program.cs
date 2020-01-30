@@ -10,7 +10,7 @@ namespace Swetugg.Demos
             {
                 var dog = new Dog();
                 var cat = new Cat();
-            } 
+            }
             catch (Exception)
             {
                 // do nothing

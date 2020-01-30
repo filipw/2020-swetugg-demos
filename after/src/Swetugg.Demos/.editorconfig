@@ -1,6 +1,8 @@
 ﻿root = true
 
 [*.cs]
+
+### StyleCop configuration to prevent clashes
 dotnet_diagnostic.SA1600.severity = none # document code
 dotnet_diagnostic.SA1633.severity = none # file header
 dotnet_diagnostic.SA1200.severity = none # usings inside namespace

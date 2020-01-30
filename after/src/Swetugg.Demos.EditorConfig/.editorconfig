@@ -26,8 +26,3 @@ dotnet_naming_symbols.constant_symbols.applicable_kinds = *
 dotnet_naming_symbols.constant_symbols.required_modifiers = const
 
 dotnet_naming_style.all_upper_style.capitalization = all_upper
-
-dotnet_diagnostic.SA1600.severity = none
-
-dotnet_diagnostic.CA1031.severity = error
-dotnet_diagnostic.SA1402.severity = error

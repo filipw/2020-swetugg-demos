@@ -20,7 +20,7 @@ namespace Swetugg.VariableLengthAnalyzer
     {
         private const string title = "Adjust length";
 
-        public sealed override ImmutableArray<string> FixableDiagnosticIds => ImmutableArray.Create(SwetuggVariableLengthAnalyzerAnalyzer.DiagnosticId);
+        public sealed override ImmutableArray<string> FixableDiagnosticIds => ImmutableArray.Create("SWG001");
 
         public sealed override FixAllProvider GetFixAllProvider() => WellKnownFixAllProviders.BatchFixer;
 

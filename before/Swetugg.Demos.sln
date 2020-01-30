@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swetugg.Demos", "src\Swetugg.Demos\Swetugg.Demos.csproj", "{654C1948-90BB-4E45-869C-4A56CE1A1458}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BB08F7CD-0461-41E1-9949-4A0ADF2A1AB7}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet.config = NuGet.config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swetugg.VariableLengthAnalyzer", "src\Swetugg.VariableLengthAnalyzer\Swetugg.VariableLengthAnalyzer.csproj", "{C5D71AD5-9A58-4A36-AAAF-8B995509916E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swetugg.VariableLengthAnalyzer.Vsix", "src\Swetugg.VariableLengthAnalyzer.Vsix\Swetugg.VariableLengthAnalyzer.Vsix.csproj", "{46902954-F328-4405-AB85-F457E72473AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swetugg.Demos.EditorConfig", "src\Swetugg.Demos.EditorConfig\Swetugg.Demos.EditorConfig.csproj", "{566443A8-7008-4EFE-85B8-9463B7B1CD7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{654C1948-90BB-4E45-869C-4A56CE1A1458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{654C1948-90BB-4E45-869C-4A56CE1A1458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{654C1948-90BB-4E45-869C-4A56CE1A1458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{654C1948-90BB-4E45-869C-4A56CE1A1458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5D71AD5-9A58-4A36-AAAF-8B995509916E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D71AD5-9A58-4A36-AAAF-8B995509916E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D71AD5-9A58-4A36-AAAF-8B995509916E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D71AD5-9A58-4A36-AAAF-8B995509916E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46902954-F328-4405-AB85-F457E72473AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46902954-F328-4405-AB85-F457E72473AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46902954-F328-4405-AB85-F457E72473AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46902954-F328-4405-AB85-F457E72473AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{566443A8-7008-4EFE-85B8-9463B7B1CD7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{566443A8-7008-4EFE-85B8-9463B7B1CD7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{566443A8-7008-4EFE-85B8-9463B7B1CD7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{566443A8-7008-4EFE-85B8-9463B7B1CD7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2E80684-0EF3-4A7B-8B36-466ED69D4D77}
+	EndGlobalSection
+EndGlobal
