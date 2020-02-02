@@ -27,27 +27,39 @@ namespace Swetugg.VariableLengthAnalyzer
         public sealed override async Task RegisterCodeFixesAsync(CodeFixContext context)
         {
             var root = await context.Document.GetSyntaxRootAsync(context.CancellationToken).ConfigureAwait(false);
+
+            // TODO: Replace the following code with your own analysis, generating a CodeAction for each fix to suggest
             var diagnostic = context.Diagnostics.First();
             var diagnosticSpan = diagnostic.Location.SourceSpan;
 
-            var declaration = root.FindToken(diagnosticSpan.Start).Parent.AncestorsAndSelf().OfType<VariableDeclaratorSyntax>().First();
+            // Find the type declaration identified by the diagnostic.
+            var declaration = root.FindToken(diagnosticSpan.Start).Parent.AncestorsAndSelf().OfType<TypeDeclarationSyntax>().First();
 
+            // Register a code action that will invoke the fix.
             context.RegisterCodeFix(
                 CodeAction.Create(
                     title: title,
-                    createChangedSolution: c => AdjustLength(context.Document, declaration, c),
+                    createChangedSolution: c => MakeUppercaseAsync(context.Document, declaration, c),
                     equivalenceKey: title),
                 diagnostic);
         }
 
-        private async Task<Solution> AdjustLength(Document document, VariableDeclaratorSyntax variableDeclarationSyntax, CancellationToken cancellationToken)
+        private async Task<Solution> MakeUppercaseAsync(Document document, TypeDeclarationSyntax typeDecl, CancellationToken cancellationToken)
         {
-            var variableName = variableDeclarationSyntax.Identifier.Text;
-            var newName = variableName.Length < 8 ? variableName.PadRight(8, 'X') : variableName.Substring(0, 20);
-            var semanticModel = await document.GetSemanticModelAsync(cancellationToken);
-            var localSymbol = semanticModel.GetDeclaredSymbol(variableDeclarationSyntax, cancellationToken);
-            var newSolution = await Renamer.RenameSymbolAsync(document.Project.Solution, localSymbol, newName, document.Project.Solution.Workspace.Options, cancellationToken).ConfigureAwait(false);
+            // Compute new uppercase name.
+            var identifierToken = typeDecl.Identifier;
+            var newName = identifierToken.Text.ToUpperInvariant();
 
+            // Get the symbol representing the type to be renamed.
+            var semanticModel = await document.GetSemanticModelAsync(cancellationToken);
+            var typeSymbol = semanticModel.GetDeclaredSymbol(typeDecl, cancellationToken);
+
+            // Produce a new solution that has all references to that type renamed, including the declaration.
+            var originalSolution = document.Project.Solution;
+            var optionSet = originalSolution.Workspace.Options;
+            var newSolution = await Renamer.RenameSymbolAsync(document.Project.Solution, typeSymbol, newName, optionSet, cancellationToken).ConfigureAwait(false);
+
+            // Return the new solution with the now-uppercase type name.
             return newSolution;
         }
     }

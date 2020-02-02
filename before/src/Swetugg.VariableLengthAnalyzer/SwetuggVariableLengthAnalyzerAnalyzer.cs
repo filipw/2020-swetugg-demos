@@ -26,16 +26,22 @@ namespace Swetugg.VariableLengthAnalyzer
 
         public override void Initialize(AnalysisContext context)
         {
-            context.RegisterSyntaxNodeAction(AnalyzeSyntaxNode, SyntaxKind.VariableDeclarator);
+            // TODO: Consider registering other actions that act on syntax instead of or in addition to symbols
+            // See https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Actions%20Semantics.md for more information
+            context.RegisterSymbolAction(AnalyzeSymbol, SymbolKind.NamedType);
         }
 
-        private static void AnalyzeSyntaxNode(SyntaxNodeAnalysisContext context)
+        private static void AnalyzeSymbol(SymbolAnalysisContext context)
         {
-            var variableDeclaratorSyntax = (VariableDeclaratorSyntax)context.Node;
-            var variableName = variableDeclaratorSyntax.Identifier.Text;
-            if (variableName != null && (variableName.Length < 8 || variableName.Length > 20))
+            // TODO: Replace the following code with your own analysis, generating Diagnostic objects for any issues you find
+            var namedTypeSymbol = (INamedTypeSymbol)context.Symbol;
+
+            // Find just those named type symbols with names containing lowercase letters.
+            if (namedTypeSymbol.Name.ToCharArray().Any(char.IsLower))
             {
-                var diagnostic = Diagnostic.Create(Rule, variableDeclaratorSyntax.GetLocation(), variableName, variableName.Length);
+                // For all such symbols, produce a diagnostic.
+                var diagnostic = Diagnostic.Create(Rule, namedTypeSymbol.Locations[0], namedTypeSymbol.Name);
+
                 context.ReportDiagnostic(diagnostic);
             }
         }
